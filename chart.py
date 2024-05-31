@@ -26,7 +26,7 @@ for i, (index, row) in enumerate(df_reversed.iterrows()):
 
     # Add module name text above the bars
     middle = start + (end - start) / 2
-    ax.text(middle, i + 0.4, row['Module'],  # Position text just above each bar
+    ax.text(middle, i + 0.2, row['Module'],  # Position text just above each bar
             ha='center', va='bottom', color='black', fontsize=10, fontweight='bold')
 
 # Set the y-ticks to correspond to the reversed order
